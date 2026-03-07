@@ -1,0 +1,86 @@
+The project will be a CLI tool, one similar to btop or htop. Read certain files containing
+the information about the system, such as the temperatures of certain components or 
+information about tasks. The project will be written in C# and will have a decent enough 
+interface to make the information readable and easy to understand. 
+
+The features are as following but not limited to: 
+ - Show CPU, GPU and System temperatures.
+ - Show GPU and CPU usage and show usage / temp for each thread of the CPU.
+ - Show CPU frequency per core.
+ - Show processes and their PID, CPU usage and RAM usage.
+ - Show Disk usage, how much storage is taken, what partitions exist etc.
+ - Show RAM usage, total, available, used, cached and free (unallocated).
+ - Show current uptime of the system.
+ - Show current time (might expect the user to have the right time and date configured)
+ - Might include Swap usage if it exists.
+ - Might have a separate utility for monitoring and changing the speed of the fans. 
+ - If a battery is detected (on laptops), will show the current percentage.
+ - MORE FEATURES SHOULD BE LISTED HERE!
+
+
+The project structure will be as following, where " Project/ " is the folder that contains
+the entire project. Any items that have a slash (" / ") after their name are directories 
+that hold other files. Examples like " Parsers/ ", it is a directory that holds the codes 
+for all different parsers (check structure and the explanation to what they actually are).
+
+
+
+/ Project/
+
+    | - Main.cs (the central program that runs everything)
+
+    | - SysInfo.cs (Will check the system details (hardware name, cpu threads, active tasks, ram and disk info and more)
+
+    | - Parsers/ (the folder that has the code for each parser (the code that takes the plain text and parses into needed data))
+
+        | - Parsers/CPUTemp.cs (Will have 1 method that will read a single cpu thread temp, which will be used to check the temperature of all cpu threads)
+
+        | - Parsers/GPUTemp.cs (Does what the name suggests)
+
+        | - Parsers/SystemTemp.cs (Checks the system temperature at /sys/class/thermal/thermal_zone0/temp (which usually is the system temperature))
+
+        | - Parsers/CPUUsage.cs (Checks the usage for each single thread)
+
+        | - Parsers/GPUUsage.cs (Checks the usage of the GPU0 (dedicated GPU most often))
+    
+        | - Parsers/RAMUsage.cs (Checks the RAM usage)
+
+        | - Parsers/DiskUsage.cs (Checks the disk usage)
+
+        | - Parsers/(( - ANY EXTRA PARSERS FOR ANY EXTRA FEATURES - ))
+
+    | - Fetchers/ (The folder that has the codes for each fetcher (the code that fetches the raw details of the system by diving into specific files)
+        
+        | - Fetchers/CPUTempFetcher.cs (Fetches the raw data of the CPU temperatures for each thread)
+
+        | - Fetchers/CPUUsageFetcher.cs (Fetches the raw data of the CPU thread usage and even the specific tasks that are running on that specific thread (not shown to the user, bundled up with other tasks to illustrate what tasks the CPU as a whole is running))
+
+        | - Fetchers/GPUTempFetcher.cs (Fetches the raw data of the GPU0 (which should most often be the dedicated GPU) temperature)
+
+        | - Fetchers/GPUUsageFetcher.cs (Fetches the raw data of the GPU0 usage, including the vram usage)
+
+        | - Fetchers/RAMUsageFetcher.cs (Fetches the raw data of the RAM usage, following these critereas: usage, total, available, used, cached and free)
+
+        | - Fetchers/DiskUsageFetcher.cs (Fetches the raw data of the Disk usage, finds all avaliable partitions (might need root priviliges) and lists them off with the information about how much data each partition is taking up (will not be so advanced as to being able to show what the partitions hold))
+
+        | - Fetchers/(( - ANY EXTRA FETCHERS FOR ANY EXTRA FEATURES - ))
+
+    | - Output/ (The folder that contains the code for the output that will be outputted to the terminal using Console.WriteLine(); method, whilst showing the information in a clear and easy structure)
+        
+        | - Output/DataTable.cs (The method that will put all information in a nice table, all info will be displayed on there and the method will write that table out once, the method will be ran over and over every second or an interval that the user himself can specify, whilst also prohibiting numbers too small (smaller than 0.01s).  // OR // it will take on the value of the table (string Method()), which the Main() function in Main.cs will read and check and then output. 
+
+    | - SystemSnapshot (The class that will contain the CPU usage, temperature, processes and all other stuff)
+        
+        | - CPUTemperature (A class that will contain the temperature of each thread / of the CPU)
+
+        | - CPUUsage (The class that will contain the CPU usage of each task and the total)
+
+        | - GPUTemperature (The class that will contain the GPU usage and vram usage)
+
+        | - GPUUsage (The class that will contain the GPU temperature)
+
+        | - RAMUsage (The class that will contain the RAM usage)
+
+        | - DiskUsage (The class that will contain the Disk usage)
+
+        | - (( - ANY NEW CLASS OR FEATURE GOES HERE - )) 
