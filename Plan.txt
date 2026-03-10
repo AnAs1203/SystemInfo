@@ -27,7 +27,7 @@ for all different parsers (check structure and the explanation to what they actu
 
 / Project/
 
-    | - Main.cs (the central program that runs everything)
+    | - Program.cs (the central program that runs everything)
 
     | - SysInfo.cs (Will check the system details (hardware name, cpu threads, active tasks, ram and disk info and more)
 

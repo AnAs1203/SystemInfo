@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TqN0l8msUs0=",
+  "success": true,
+  "projectFilePath": "/home/geezer/Projects/SystemInfo/SystemInfo/SystemInfo.csproj",
+  "expectedPackageFiles": [
+    "/home/geezer/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.3/microsoft.aspnetcore.app.ref.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
