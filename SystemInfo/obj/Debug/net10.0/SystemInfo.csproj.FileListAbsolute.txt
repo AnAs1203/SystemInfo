@@ -1,0 +1,15 @@
+/home/geezer/Projects/SystemInfo/SystemInfo/bin/Debug/net10.0/SystemInfo
+/home/geezer/Projects/SystemInfo/SystemInfo/bin/Debug/net10.0/SystemInfo.deps.json
+/home/geezer/Projects/SystemInfo/SystemInfo/bin/Debug/net10.0/SystemInfo.runtimeconfig.json
+/home/geezer/Projects/SystemInfo/SystemInfo/bin/Debug/net10.0/SystemInfo.dll
+/home/geezer/Projects/SystemInfo/SystemInfo/bin/Debug/net10.0/SystemInfo.pdb
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.GeneratedMSBuildEditorConfig.editorconfig
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.AssemblyInfoInputs.cache
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.AssemblyInfo.cs
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.csproj.CoreCompileInputs.cache
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.sourcelink.json
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.dll
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/refint/SystemInfo.dll
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.pdb
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/SystemInfo.genruntimeconfig.cache
+/home/geezer/Projects/SystemInfo/SystemInfo/obj/Debug/net10.0/ref/SystemInfo.dll

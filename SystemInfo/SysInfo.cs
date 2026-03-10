@@ -1,6 +1,7 @@
-namespace Program;
+namespace SysInfo;
 
 public class SysInfo
 {
     
 }
+

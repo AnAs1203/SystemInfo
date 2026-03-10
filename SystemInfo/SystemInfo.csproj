@@ -7,4 +7,25 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Fetchers\" />
+    <Folder Include="Output\" />
+    <Folder Include="Parsers\" />
+    <Folder Include="SystemSnapshot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include=".idea\.idea.SystemInfo.dir\.idea\.gitignore" />
+    <Content Include=".idea\.idea.SystemInfo.dir\.idea\encodings.xml" />
+    <Content Include=".idea\.idea.SystemInfo.dir\.idea\indexLayout.xml" />
+    <Content Include=".idea\.idea.SystemInfo.dir\.idea\projectSettingsUpdater.xml" />
+    <Content Include=".idea\.idea.SystemInfo.dir\.idea\vcs.xml" />
+    <Content Include=".idea\.idea.SystemInfo.dir\.idea\workspace.xml" />
+    <Content Include="bin\Debug\net10.0\SystemInfo" />
+    <Content Include="bin\Debug\net10.0\SystemInfo.deps.json" />
+    <Content Include="bin\Debug\net10.0\SystemInfo.dll" />
+    <Content Include="bin\Debug\net10.0\SystemInfo.pdb" />
+    <Content Include="bin\Debug\net10.0\SystemInfo.runtimeconfig.json" />
+  </ItemGroup>
+
 </Project>

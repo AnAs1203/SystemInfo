@@ -71,16 +71,10 @@ for all different parsers (check structure and the explanation to what they actu
 
     | - SystemSnapshot (The class that will contain the CPU usage, temperature, processes and all other stuff)
         
-        | - CPUTemperature (A class that will contain the temperature of each thread / of the CPU)
+        | - CPUStats (The class that contains the cpu info)
 
-        | - CPUUsage (The class that will contain the CPU usage of each task and the total)
+        | - GPUStats (The class that contains the gpu info)
+        
+        | - RAMStats (The class that contains the RAM info)
 
-        | - GPUTemperature (The class that will contain the GPU usage and vram usage)
-
-        | - GPUUsage (The class that will contain the GPU temperature)
-
-        | - RAMUsage (The class that will contain the RAM usage)
-
-        | - DiskUsage (The class that will contain the Disk usage)
-
-        | - (( - ANY NEW CLASS OR FEATURE GOES HERE - )) 
+        | - DiskStats (The class that contains the disk info)
